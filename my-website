@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>My College</h1>
+
+    <p>
+      This website contains information about my college facilities.
+    </p>
+
+    <!-- Facilities -->
+    <section>
+      <button class="toggle-btn" onclick="toggleSection('facilities')">
+        Facilities
+      </button>
+
+      <div id="facilities" class="content">
+        <ul>
+          <li>Library</li>
+          <li>Hostel</li>
+          <li>Parking</li>
+        </ul>
+        <img src="images/hostel.jpg" width="300">
+      </div>
+    </section>
+
+    <!-- Eco Friendly -->
+    <section>
+      <button class="toggle-btn" onclick="toggleSection('eco')">
+        Eco-Friendly Campus
+      </button>
+
+      <div id="eco" class="content">
+        <p>
+          Our campus follows eco-friendly practices such as water conservation,
+          waste segregation, and green surroundings.
+        </p>
+        <img src="images/campus.jpg">
+      </div>
+    </section>
+
+    <a href="https://www.google.com" target="_blank">
+      Visit Google
+    </a>
+    <footer>
+  <p>© 2026 My College. All rights reserved.</p>
+</footer>
+  </div>
+
+  <!-- JavaScript at the end -->
+  <script src="script.js"></script>
+
+</body>
+</html>
+function toggleSection(id) {
+  const section = document.getElementById(id);
+
+  if (section.style.display === "none" || section.style.display === "") {
+    section.style.display = "block";
+  } else {
+    section.style.display = "none";
+  }
+}
+/* Reset basic spacing */
+* {
+  box-sizing: border-box;
+}
+
+/* Page background and font */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f4f6;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Main content box */
+.container {
+  max-width: 900px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+/* Headings */
+h1 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #34495e;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+/* Text */
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333333;
+}
+
+/* Lists */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Links */
+a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Toggle buttons */
+.toggle-btn {
+  width: 100%;
+  text-align: left;
+  padding: 12px;
+  font-size: 18px;
+  background-color: #e8f0fe;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.toggle-btn:hover {
+  background-color: #d2e3fc;
+}
+
+/* Hidden content */
+.content {
+  display: none;
+  padding: 10px 5px;
+}
+
+/* Section spacing */
+section {
+  margin-bottom: 20px;
+}
+
+/* Small screens (mobile only tweaks) */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}
+footer {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
