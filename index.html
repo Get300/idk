@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>My College</h1>
+
+    <p>
+      This website contains information about my college facilities.
+    </p>
+
+    <!-- Facilities -->
+    <section>
+      <button class="toggle-btn" onclick="toggleSection('facilities')">
+        Facilities
+      </button>
+
+      <div id="facilities" class="content">
+        <ul>
+          <li>Library</li>
+          <li>Hostel</li>
+          <li>Parking</li>
+        </ul>
+        <img src="images/hostel.jpg" width="300">
+      </div>
+    </section>
+
+    <!-- Eco Friendly -->
+    <section>
+      <button class="toggle-btn" onclick="toggleSection('eco')">
+        Eco-Friendly Campus
+      </button>
+
+      <div id="eco" class="content">
+        <p>
+          Our campus follows eco-friendly practices such as water conservation,
+          waste segregation, and green surroundings.
+        </p>
+        <img src="images/campus.jpg">
+      </div>
+    </section>
+
+    <a href="https://www.google.com" target="_blank">
+      Visit Google
+    </a>
+    <footer>
+  <p>© 2026 My College. All rights reserved.</p>
+</footer>
+  </div>
+
+  <!-- JavaScript at the end -->
+  <script src="script.js"></script>
+
+</body>
+</html>
